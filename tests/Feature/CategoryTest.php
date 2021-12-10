@@ -50,21 +50,7 @@ class CategoryTest extends TestCase
         $this->assertDatabaseHas('categories', $payload);
     }
 
-    public function testCategoryIsDestroyed() {
 
-        $categoryData =
-            [
-                'name' => 'Test Category'
-            ];
-        $category = Category::create(
-            $categoryData
-        );
-
-        $this->json('delete', "api/v1/category/$category->id")
-             ->assertNoContent();
-
-        $this->assertDatabaseMissing('categories', $categoryData);
-    }
 
 
 }
