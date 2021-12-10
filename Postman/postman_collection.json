@@ -1,0 +1,412 @@
+{
+    "info": {
+        "_postman_id": "271abfab-199a-13ee-a451-2e162f3da0b6",
+        "name": "adsTask",
+        "schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+    },
+    "item": [{
+        "name": "category",
+        "item": [{
+            "name": "categories",
+            "id": "cadd8d40-ad91-6e56-5b88-69ee0b8bb34f",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                    "mode": "formdata",
+                    "formdata": []
+                },
+                "url": "{{base_url}}/api/v1/categories"
+            },
+            "response": []
+        }, {
+            "name": "add category",
+            "id": "27721d26-02b6-09bb-851b-e67af38ed2a4",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "formdata",
+                    "formdata": [{
+                        "key": "name",
+                        "value": "testaaa",
+                        "type": "text"
+                    }]
+                },
+                "url": "{{base_url}}/api/v1/category"
+            },
+            "response": []
+        }, {
+            "name": "update category",
+            "id": "c2882756-0da4-cf82-bbf1-957e60167f84",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "formdata",
+                    "formdata": [{
+                        "key": "name",
+                        "value": "testunit",
+                        "type": "text"
+                    }]
+                },
+                "url": "{{base_url}}/api/v1/category/36"
+            },
+            "response": []
+        }, {
+            "name": "delete category",
+            "id": "ad17413c-3755-3e1a-96f4-691be33f54e0",
+            "request": {
+                "method": "DELETE",
+                "header": [],
+                "body": {
+                    "mode": "formdata",
+                    "formdata": []
+                },
+                "url": "{{base_url}}/api/v1/category/36"
+            },
+            "response": []
+        }, {
+            "name": "get category",
+            "id": "098a7293-6b7e-120a-4521-49dbcc14e9bf",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                    "mode": "formdata",
+                    "formdata": []
+                },
+                "url": "{{base_url}}/api/v1/category/8"
+            },
+            "response": []
+        }],
+        "id": "e91be4ba-ae42-0356-bfbb-fcb88df0be27"
+    }, {
+        "name": "tag",
+        "item": [{
+            "name": "tags",
+            "id": "a56f5b74-98ac-73cd-0ade-77a5dd66e407",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                    "mode": "formdata",
+                    "formdata": []
+                },
+                "url": "{{base_url}}/api/v1/tags"
+            },
+            "response": []
+        }, {
+            "name": "add tag",
+            "id": "7d309ec3-8253-f9c2-1c69-df3b9a9fac92",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "formdata",
+                    "formdata": [{
+                        "key": "name",
+                        "value": "testtag",
+                        "type": "text"
+                    }]
+                },
+                "url": "{{base_url}}/api/v1/tag"
+            },
+            "response": []
+        }, {
+            "name": "update tag",
+            "id": "35f51e01-dc15-2e54-8deb-56358a6a864b",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "formdata",
+                    "formdata": [{
+                        "key": "name",
+                        "value": "aliaaa",
+                        "type": "text"
+                    }]
+                },
+                "url": "{{base_url}}/api/v1/tag/5"
+            },
+            "response": []
+        }, {
+            "name": "delete tag",
+            "id": "7f6076df-7966-75c4-6419-c7f1ea1c2be2",
+            "request": {
+                "method": "DELETE",
+                "header": [],
+                "body": {
+                    "mode": "formdata",
+                    "formdata": [{
+                        "key": "name",
+                        "value": "test",
+                        "type": "text"
+                    }]
+                },
+                "url": "{{base_url}}/api/v1/tag/4"
+            },
+            "response": []
+        }, {
+            "name": "get tag",
+            "id": "a0eb1bc8-58c4-d221-5136-d63312ac41ad",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                    "mode": "formdata",
+                    "formdata": []
+                },
+                "url": "{{base_url}}/api/v1/tag/2"
+            },
+            "response": []
+        }],
+        "id": "30de57ce-7050-b475-84f7-809045af39f7"
+    }, {
+        "name": "ad",
+        "item": [{
+            "name": "ads",
+            "id": "1bd9a8b2-f89e-a033-1bb2-31b97843b21f",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                    "mode": "formdata",
+                    "formdata": []
+                },
+                "url": {
+                    "raw": "{{base_url}}/api/v1/ads?category=1&tag=1&advertiser=1",
+                    "host": ["{{base_url}}"],
+                    "path": ["api", "v1", "ads"],
+                    "query": [{
+                        "key": "category",
+                        "value": "1"
+                    }, {
+                        "key": "tag",
+                        "value": "1"
+                    }, {
+                        "key": "advertiser",
+                        "value": "1"
+                    }]
+                }
+            },
+            "response": []
+        }, {
+            "name": "get ad",
+            "id": "dc885a98-4601-674b-abfa-8f8a5cb86b9a",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "body": {
+                    "mode": "formdata",
+                    "formdata": []
+                },
+                "url": "{{base_url}}/api/v1/ad/1"
+            },
+            "response": []
+        }, {
+            "name": "add ad",
+            "id": "3234c375-5148-7ffc-2569-22dbfd6fe0d7",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "formdata",
+                    "formdata": [{
+                        "key": "title",
+                        "value": "shahin ad",
+                        "type": "text"
+                    }, {
+                        "key": "advertiser_id",
+                        "value": "1",
+                        "type": "text"
+                    }, {
+                        "key": "type",
+                        "value": "free",
+                        "description": "free, paid",
+                        "type": "text"
+                    }, {
+                        "key": "description",
+                        "value": "ssad",
+                        "type": "text"
+                    }, {
+                        "key": "start_date",
+                        "value": "11/11/2021",
+                        "type": "text"
+                    }, {
+                        "key": "category_id",
+                        "value": "1",
+                        "type": "text"
+                    }, {
+                        "key": "tag_id[0]",
+                        "value": "1",
+                        "type": "text"
+                    }, {
+                        "key": "tag_id[1]",
+                        "value": "3",
+                        "type": "text"
+                    }]
+                },
+                "url": "{{base_url}}/api/v1/ad"
+            },
+            "response": [{
+                "id": "9a9b39df-9976-7413-029c-47846f8bab06",
+                "name": "add ad",
+                "originalRequest": {
+                    "method": "POST",
+                    "header": [],
+                    "body": {
+                        "mode": "formdata",
+                        "formdata": [{
+                            "key": "title",
+                            "value": "shahin ad",
+                            "type": "text"
+                        }, {
+                            "key": "advertiser_id",
+                            "value": "1",
+                            "type": "text"
+                        }, {
+                            "key": "type",
+                            "value": "free",
+                            "description": "free, paid",
+                            "type": "text"
+                        }, {
+                            "key": "description",
+                            "value": "ssad",
+                            "type": "text"
+                        }, {
+                            "key": "start_date",
+                            "value": "11/11/2021",
+                            "type": "text"
+                        }, {
+                            "key": "category_id",
+                            "value": "1",
+                            "type": "text"
+                        }, {
+                            "key": "tag_id[0]",
+                            "value": "1",
+                            "type": "text"
+                        }, {
+                            "key": "tag_id[1]",
+                            "value": "3",
+                            "type": "text"
+                        }]
+                    },
+                    "url": "{{base_url}}/api/v1/ad"
+                },
+                "status": "OK",
+                "code": 200,
+                "_postman_previewlanguage": "json",
+                "_postman_previewtype": "text",
+                "header": [{
+                    "name": "access-control-allow-origin",
+                    "key": "access-control-allow-origin",
+                    "value": "*",
+                    "description": "Specifies a URI that may access the resource. For requests without credentials, the server may specify '*' as a wildcard, thereby allowing any origin to access the resource."
+                }, {
+                    "name": "cache-control",
+                    "key": "cache-control",
+                    "value": "no-cache, private",
+                    "description": "Tells all caching mechanisms from server to client whether they may cache this object. It is measured in seconds"
+                }, {
+                    "name": "connection",
+                    "key": "connection",
+                    "value": "close",
+                    "description": "Options that are desired for the connection"
+                }, {
+                    "name": "content-type",
+                    "key": "content-type",
+                    "value": "application/json",
+                    "description": "The mime type of this content"
+                }, {
+                    "name": "date",
+                    "key": "date",
+                    "value": "Fri, 10 Dec 2021 12:58:02 GMT, Fri, 10 Dec 2021 12:58:02 GMT",
+                    "description": "The date and time that the message was sent"
+                }, {
+                    "name": "host",
+                    "key": "host",
+                    "value": "127.0.0.1:8000",
+                    "description": "Custom header"
+                }, {
+                    "name": "x-powered-by",
+                    "key": "x-powered-by",
+                    "value": "PHP/7.4.25",
+                    "description": "Specifies the technology (ASP.NET, PHP, JBoss, e.g.) supporting the web application (version details are often in X-Runtime, X-Version, or X-AspNet-Version)"
+                }, {
+                    "name": "x-ratelimit-limit",
+                    "key": "x-ratelimit-limit",
+                    "value": "60",
+                    "description": "Custom header"
+                }, {
+                    "name": "x-ratelimit-remaining",
+                    "key": "x-ratelimit-remaining",
+                    "value": "57",
+                    "description": "Custom header"
+                }],
+                "cookie": [],
+                "responseTime": 86,
+                "body": "{\"status\":true,\"message\":\"Ad created successfully\",\"ad\":{\"id\":1,\"title\":\"shahin ad\",\"type\":\"free\",\"description\":\"ssad\",\"start_date\":\"2021-11-11\",\"advertiser_id\":\"1\",\"category_id\":\"1\",\"category\":{\"id\":1,\"name\":\"test category\",\"created_at\":\"2021-12-09T18:06:14.000000Z\",\"updated_at\":\"2021-12-09T18:06:14.000000Z\"},\"tags\":[{\"id\":1,\"name\":\"test tag\",\"created_at\":\"2021-12-09T18:08:47.000000Z\",\"updated_at\":\"2021-12-09T18:08:47.000000Z\",\"pivot\":{\"ad_id\":1,\"tag_id\":1,\"created_at\":\"2021-12-10T12:58:02.000000Z\",\"updated_at\":\"2021-12-10T12:58:02.000000Z\"}},{\"id\":3,\"name\":\"test tag\",\"created_at\":\"2021-12-09T18:14:20.000000Z\",\"updated_at\":\"2021-12-09T18:14:20.000000Z\",\"pivot\":{\"ad_id\":1,\"tag_id\":3,\"created_at\":\"2021-12-10T12:58:02.000000Z\",\"updated_at\":\"2021-12-10T12:58:02.000000Z\"}}]}}"
+            }]
+        }, {
+            "name": "update ad",
+            "id": "63629a70-6c2b-d757-72b0-9f99f1d80c4d",
+            "request": {
+                "method": "POST",
+                "header": [],
+                "body": {
+                    "mode": "formdata",
+                    "formdata": [{
+                        "key": "title",
+                        "value": "shahin adaaa",
+                        "type": "text"
+                    }, {
+                        "key": "advertiser_id",
+                        "value": "1",
+                        "type": "text"
+                    }, {
+                        "key": "type",
+                        "value": "freeaa",
+                        "type": "text"
+                    }, {
+                        "key": "description",
+                        "value": "ssad",
+                        "type": "text"
+                    }, {
+                        "key": "start_date",
+                        "value": "11/11/2021",
+                        "type": "text"
+                    }, {
+                        "key": "category_id",
+                        "value": "2",
+                        "type": "text"
+                    }, {
+                        "key": "tag_id[0]",
+                        "value": "1",
+                        "type": "text"
+                    }, {
+                        "key": "tag_id[1]",
+                        "value": "3",
+                        "type": "text"
+                    }]
+                },
+                "url": "{{base_url}}/api/v1/ad/10"
+            },
+            "response": []
+        }, {
+            "name": "delete ad",
+            "id": "004ef144-132a-93d2-66df-5262d96129bf",
+            "request": {
+                "method": "DELETE",
+                "header": [],
+                "body": {
+                    "mode": "formdata",
+                    "formdata": []
+                },
+                "url": "{{base_url}}/api/v1/ad/11"
+            },
+            "response": []
+        }],
+        "id": "d73161ba-a1de-735c-aa21-dd84c66e16d4"
+    }]
+}
